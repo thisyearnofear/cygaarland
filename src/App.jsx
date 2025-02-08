@@ -2,6 +2,8 @@ import { useEffect, useRef } from "react";
 import { isMobile, isTablet } from "react-device-detect";
 
 import Scene from "./Scene";
+import MusicPlayer from "./components/MusicPlayer";
+import "./styles/MusicPlayer.css";
 
 function App() {
   const tutorialRef = useRef(null);
@@ -23,6 +25,7 @@ function App() {
   return (
     <div className="canvas-wrapper">
       <Scene />
+      <MusicPlayer />
 
       <div ref={tutorialRef} className="tutorial-wrapper">
         {isTablet || isMobile ? (
