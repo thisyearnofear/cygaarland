@@ -570,7 +570,7 @@ const InfiniteSnowWorld = () => {
         </mesh>
       ))}
 
-      <group ref={characterParentRef}>
+      <group ref={characterParentRef} name="characterParent">
         <primitive ref={characterRef} object={scene} />
         <FogEffect />
         <PositionalAudio

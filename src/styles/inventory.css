@@ -1,0 +1,85 @@
+.inventory-overlay {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  border-radius: 8px;
+  color: white;
+  z-index: 1000;
+  display: flex;
+  gap: 10px;
+}
+
+.inventory-item {
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.inventory-item:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.item-details {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.95);
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  color: white;
+  z-index: 1001;
+}
+
+.item-details h2 {
+  margin: 0 0 10px;
+  color: #FFD700;
+}
+
+.item-details p {
+  color: #CCC;
+  margin-bottom: 20px;
+}
+
+.item-details .content {
+  white-space: pre-wrap;
+  font-family: monospace;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.item-details button {
+  background: #444;
+  border: none;
+  padding: 8px 16px;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.item-details button:hover {
+  background: #555;
+}
+
+.pickup-prompt {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  pointer-events: none;
+  z-index: 1000;
+  text-align: center;
+}

@@ -1,0 +1,63 @@
+.inventory-overlay {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  border-radius: 8px;
+  color: white;
+  z-index: 1000;
+}
+
+.inventory-items {
+  display: flex;
+  gap: 10px;
+}
+
+.inventory-item {
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+}
+
+.item-details {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.9);
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  
+  h3 {
+    margin: 0 0 10px;
+    color: #fff;
+  }
+  
+  p {
+    color: #ccc;
+    margin: 10px 0;
+  }
+  
+  button {
+    background: #444;
+    border: none;
+    padding: 8px 16px;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    
+    &:hover {
+      background: #555;
+    }
+  }
+}
